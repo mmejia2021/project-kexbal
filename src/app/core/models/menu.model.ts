@@ -5,6 +5,7 @@ export interface MenuItem {
   active?: boolean;
   route?: string | null;
   items: Array<SubMenuItem>;
+  link: string;
 }
 
 export interface SubMenuItem {

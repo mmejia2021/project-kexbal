@@ -1,6 +1,7 @@
 .img-iconq{
     background-image: url("../.././../../../assets/icons/icon_q.png");
     background-repeat: no-repeat;
-    text-indent: 20px;
+    text-indent: 25px;
+    background-position: left;
 }
 

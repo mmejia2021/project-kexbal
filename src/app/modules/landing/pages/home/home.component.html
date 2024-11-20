@@ -1,22 +1,29 @@
-<section id="seccion1" class="sm:flex justify-center items-center h-screen">
+<section id="seccion_1" class="sm:flex justify-center pt-2 lg:pt-40 md:pt-40 sm:pt-40 h-screen ">
     <div class="px-4 mx-auto max-w-screen-2xl md:grid md:grid-cols-2 lg:grid-cols-12">
-        <div class="col-span-6 mr-8">
+        <div class="col-span-6 mr-8  pt-2 lg:pt-20 md:pt-20 sm:pt-20">
             <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter">
                 ¡Vende y Compra</p>
             <p class="text-blue-kexbal-600 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter">
                 Dólares Bancarizados</p>
             <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter"> a
                 las mejores tasas!</p>
-            <div class="md:mt-2">
+            <div class="mt-4 md:mt-7">
                 <button (click)=toggleDisplay()
-                    class="inline-flex rounded-md px-3 py-2 text-sm font-medium bg-primary-color-500 text-white">Comprar</button>
-                <button (click)=toggleDisplayCalculate() class="ml-5 inline-flex rounded-md px-3 py-2 text-sm font-medium border border-r-2">Vender</button>
+                    class="inline-flex rounded-md px-3 py-2 text-base font-medium bg-primary-color-500 text-white-kexbal-100 font-inter">Comprar</button>
+                <button (click)=toggleDisplayCalculate()
+                    class="ml-5 inline-flex rounded-md px-3 py-2 text-base font-medium border border-r-2 font-inter">Vender<svg
+                        class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 12H5m14 0-4 4m4-4-4-4" />
+                    </svg>
+                </button>
             </div>
         </div>
         <div class="col-span-6">
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg" [hidden]="isShowTable">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-kexbal-900 font-inter">
-                    <thead class="text-xs text-gray-kexbal-900 uppercase bg-gray-50">
+                    <thead class="text-xs text-gray-500 uppercase bg-white-kexbal-100">
                         <tr>
                             <th scope="col" class="px-6 py-3">
                                 USUARIO
@@ -35,131 +42,140 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr
-                            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Apple MacBook Pro 17"
+                    <tbody class="font-medium text-xs">
+                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b ">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                                Carlos R.
                             </th>
-                            <td class="px-6 py-4">
-                                Silver
+                            <td class="px-6 py-4 px-6 py-4 text-sm font-semibold text-gray-900">
+                                $2300.00
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                                Q7.80
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <span class="bg-primary-color-100 p-2 rounded-md"> Promerica</span>
                             </td>
                             <td class="px-6 py-4">
-                                Laptop
-                            </td>
-                            <td class="px-6 py-4">
-                                $2999
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <button
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
                             </td>
                         </tr>
-                        <tr
-                            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Microsoft Surface Pro
+                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b ">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                                Carlos R.
                             </th>
-                            <td class="px-6 py-4">
-                                White
+                            <td class="px-6 py-4 px-6 py-4 text-sm font-semibold text-gray-900">
+                                $2300.00
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                                Q7.80
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <span class="bg-primary-color-100 p-2 rounded-md"> Promerica</span>
                             </td>
                             <td class="px-6 py-4">
-                                Laptop PC
-                            </td>
-                            <td class="px-6 py-4">
-                                $1999
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <button
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
                             </td>
                         </tr>
-                        <tr
-                            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Magic Mouse 2
+                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b ">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                                Carlos R.
                             </th>
-                            <td class="px-6 py-4">
-                                Black
+                            <td class="px-6 py-4 px-6 py-4 text-sm font-semibold text-gray-900">
+                                $2300.00
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                                Q7.80
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <span class="bg-primary-color-100 p-2 rounded-md"> Promerica</span>
                             </td>
                             <td class="px-6 py-4">
-                                Accessories
-                            </td>
-                            <td class="px-6 py-4">
-                                $99
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <button
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
                             </td>
                         </tr>
-                        <tr
-                            class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Google Pixel Phone
+                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b ">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                                Carlos R.
                             </th>
-                            <td class="px-6 py-4">
-                                Gray
+                            <td class="px-6 py-4 px-6 py-4 text-sm font-semibold text-gray-900">
+                                $2300.00
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                                Q7.80
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <span class="bg-primary-color-100 p-2 rounded-md"> Promerica</span>
                             </td>
                             <td class="px-6 py-4">
-                                Phone
-                            </td>
-                            <td class="px-6 py-4">
-                                $799
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <button
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Apple Watch 5
+                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b ">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                                Carlos R.
                             </th>
-                            <td class="px-6 py-4">
-                                Red
+                            <td class="px-6 py-4 px-6 py-4 text-sm font-semibold text-gray-900">
+                                $2300.00
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                                Q7.80
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <span class="bg-primary-color-100 p-2 rounded-md"> Promerica</span>
                             </td>
                             <td class="px-6 py-4">
-                                Wearables
-                            </td>
-                            <td class="px-6 py-4">
-                                $999
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <button
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div [hidden]="isShowCalculadora">
-                <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <!--img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" /-->
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                                technology acquisitions 2021</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </a>
+                <div class="max-w-[35rem] bg-white border border-gray-200 rounded-lg shadow p-10">
+                    <form class="max-w-xl mx-auto font-inter" [formGroup]="form">
+                        <div class="flex">
+                            <div class="mb-5 mr-4">
+                                <label for="ofertaUsa" class="block mb-2 text-sm font-medium font-inter">Oferta en
+                                    USD</label>
+                                <input formControlName="ofertaUsa" type="text" id="ofertaUsa"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  w-full" />
+                            </div>
+                            <div class="mb-5">
+                                <label for="tasaGt" class="block mb-2 text-sm font-medium font-inter">Tasa en GTQ
+                                </label>
+                                <input type="text" id="tasaGt" placeholder=" " formControlName="tasaGt"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  w-full" />
+                            </div>
+                        </div>
+                    </form>
+                    <div class="p-8 bg-white-kexbal-100 sm:rounded-lg">
+                        <p class="text-center text-base font-normal text-gray-900 font-inter">Resumen de la Oferta</p>
+                        <div class="flex justify-between py-2">
+                            <p class="text-left text-base font-normal text-gray-900 font-inter">Venderás</p>
+                            <span>0.00</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <p class="text-left text-base font-normal text-gray-900 font-inter">Tasa</p>
+                            <span>0.00</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b-2">
+                            <p class="text-left text-base font-normal text-gray-900 font-inter">Servicio
+                                kexbal</p>
+                            <span class="">0.00</span>
+                        </div>
+                        <div class="flex justify-between py-4">
+                            <p class="text-lg font-extrabold font-inter">Recibirás</p>
+                            <span>0.00</span>
+                        </div>
+                        <button
+                            class="w-full rounded-md px-3 py-3 text-xs font-medium bg-primary-color-500 text-white-kexbal-100 font-inter">Publicar
+                            Oferta</button>
                     </div>
                 </div>
 
@@ -169,8 +185,8 @@
     </div>
 </section>
 
-<section id="seccion2">
-    <section class="bg-white">
+<section id="seccion_2">
+    <section class="bg-white-kexbal-100">
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 xl:gap-16 sm:py-16 lg:px-6 ">
             <img class="mb-4 w-full lg:mb-0 rounded-lg" src="../../../../../assets/images/phones.png"
@@ -183,7 +199,7 @@
                 <p class="mb-8 lg:text-xl font-inter text-gray-kexbal-500">Kexbal asegura cada transacción, resguardando
                     fondos hasta que
                     ambas partes cumplan, garantizando la seguridad y eficiencia en cada transacción.</p>
-                <div class="py-8 mb-6 border-t border-b">
+                <div class="py-8 mb-6 border-t border-b-2">
                     <div class="flex">
                         <div
                             class="flex justify-center items-center mr-4 w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900 shrink-0">
@@ -220,11 +236,12 @@
 
 </section>
 
-<section id="seccion3" class="bg-primary-color-600 text-center pt-16 pb-16">
-    <h1 class="mb-4 md:text-5xl text-4xl md:text-center text-center font-extrabold text-white-kexbal-100">Resolvemos tus
+<section id="seccion_3" class="bg-primary-color-600 text-center pt-16 pb-16">
+    <h1 class="mb-4 md:text-5xl text-4xl md:text-center text-center font-extrabold text-white-kexbal-100 font-inter ">
+        Resolvemos tus
         dudas para que <br>
         uses Kexbal con total confianza</h1>
-    <div class="mx-auto  flex justify-center">
+    <div class="mx-auto  flex justify-center mt-20 px-4 lg:px-6">
         <div id="accordion-collapse" data-accordion="collapse" class="w-[48rem]">
             <h2 id="accordion-collapse-heading-1">
 
@@ -232,7 +249,7 @@
                     class="flex items-center justify-between w-full pb-5 font-medium text-lg bg-blue-kexbal-600 text-white-kexbal-100 font-inter  border-b-2"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="img-iconq">
+                    <span class="img-iconq font-inter">
                         ¿Cómo funciona Kexbal?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -243,7 +260,8 @@
             </h2>
             <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
                 <div class="p-2 text-base font-normal font-inter text-white-kexbal-100 text-left">
-                    <p class="mb-2 w-full">KEXBAL es una plataforma que conecta a compradores y vendedores de dólares
+                    <p class="mb-2 w-full font-inter">KEXBAL es una plataforma que conecta a compradores y vendedores de
+                        dólares
                         bancarizados. Solo debes registrarte, verificar tu cuenta, y podrás explorar ofertas para
                         comprar o vender dólares a tasas competitivas. KEXBAL asegura que las transacciones sean
                         seguras, reteniendo los fondos hasta que ambas partes cumplan.
@@ -255,7 +273,7 @@
                     class="flex items-center justify-between w-full pb-5 pt-5 font-medium bg-blue-kexbal-600 text-white-kexbal-100 font-inter border border-x-0"
                     data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
                     aria-controls="accordion-collapse-body-2">
-                    <span class="img-iconq">¿La plataforma es segura? </span>
+                    <span class="img-iconq font-inter">¿La plataforma es segura? </span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -265,7 +283,7 @@
             </h2>
             <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-2 text-base font-normal font-inter  w-full text-left">
-                    <p class="mb-2 text-white-kexbal-100">Flowbite is first conceptualized and designed using
+                    <p class="mb-2 text-white-kexbal-100 font-inter">Flowbite is first conceptualized and designed using
                         the Figma software so everything you see in the library has a design equivalent in our Figma
                         file.
                     </p>
@@ -276,7 +294,7 @@
                     class="flex items-center justify-between w-full pb-5 pt-5 font-medium bg-blue-kexbal-600 text-white-kexbal-100 font-inter border border-x-0"
                     data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                     aria-controls="accordion-collapse-body-3">
-                    <span class="img-iconq">¿En cuanto tiempo recibo mi dinero? </span>
+                    <span class="img-iconq font-inter">¿En cuanto tiempo recibo mi dinero? </span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -313,20 +331,26 @@
     </div>
 </section>
 
-<section id="seccion4" class=" bg-primary-color-800 h-screen">
+<section id="seccion_5" class=" bg-primary-color-800 h-screen">
     <div
         class="px-4 mx-auto max-w-screen-xl sm:py-16 md:grid md:grid-cols-2 lg:grid-cols-12 sm:flex justify-center items-center h-screen">
         <div class="col-span-7">
             <h2
                 class="md:text-5xl text-4xl md:text-left text-center font-extrabold text-white-kexbal-100 font-inter mb-3">
                 Chatea con nuestro equipo
-                desoporte por Whatsapp</h2>
-            <p class="text-white-kexbal-100 font-inter">Recibe asistencia rápida y personalizada sobre compra y venta de
+                de soporte por Whatsapp</h2>
+            <p class="text-white-kexbal-100 font-inter mt-4 lg:mt-4 md:mt-2 sm:mt-2">Recibe asistencia rápida y
+                personalizada sobre compra y venta de
                 dólares, tarifas, y uso de la plataforma. ¡Estamos aquí para ayudarte!</p>
             <div class="mt-2">
                 <button
-                    class="mr-2 inline-flex rounded-md px-3 py-2 text-sm font-medium bg-primary-color-500 text-white-kexbal-100">Chatea
-                    por Whatsapp</button>
+                    class="mr-2 inline-flex rounded-md px-3 py-2 text-base font-medium bg-primary-color-500 text-white-kexbal-100 mt-8 lg:mt-8 md:mt-4 sm:mt-4">Chatea
+                    por Whatsapp <svg class="w-6 h-6 text-white-kexbal-100" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 12H5m14 0-4 4m4-4-4-4" />
+                    </svg>
+                </button>
             </div>
         </div>
         <div class="col-span-5">

@@ -80,6 +80,7 @@ module.exports = {
           600: '#4A3BD3',
           800: '#271E7A',
           500: '#5C4AFF',
+          100: "#EDEBFE"
         }
       },
       fontFamily: {

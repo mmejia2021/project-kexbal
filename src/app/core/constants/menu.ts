@@ -7,27 +7,32 @@ export class Menu {
       separator: false,
       route: '/kexbal/home',
       items: [],
+      link: ''
     },
     {
       group: 'Comó funciona',
       separator: true,
       items: [],
+      link: ''
     },
     {
       group: 'Preguntas',
       separator: false,
       items: [],
+      link: ''
     },
     {
         group: 'Nosotros',
         separator: false,
         route: '/kexbal/nosotros',
         items: [],
+        link: ''
     },
     {
         group: 'Contacto',
         separator: true,
         items: [],
+        link: ''
     },
     /*{
         group: 'Inicia sesion',
