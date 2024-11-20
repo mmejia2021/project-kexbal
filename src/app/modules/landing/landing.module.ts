@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LandingRoutingModule } from './landing-routing.module';
 
 
@@ -11,4 +10,7 @@ import { LandingRoutingModule } from './landing-routing.module';
     LandingRoutingModule
   ]
 })
-export class LandingModule { }
+export class LandingModule {
+
+
+}

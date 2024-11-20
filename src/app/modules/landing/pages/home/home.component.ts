@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,21 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  
+  isShowTable = false;
+  isShowCalculadora = true;
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
+
+  toggleDisplay() {
+    this.isShowTable = false;
+    this.isShowCalculadora = true;
+  }
+  toggleDisplayCalculate() {
+    this.isShowTable = true;
+    this.isShowCalculadora = false;
+  }
+
   
 }
