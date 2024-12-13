@@ -1,60 +1,73 @@
 <div class="flex h-screen w-screen">
     <div class="flex flex-1 items-center justify-center">
         <div class="max-w-2xl overflow-y-auto px-4 sm:w-[600px]">
+            <div class="flex">
+                <img src="../../../../../assets/Logo/kexbal_mobile.svg" alt="" class="mb-5 mr-2">
+                <img src="../../../../../assets/Logo/logo_kexbal.svg" alt="" class="mb-5">
+
+            </div>
             <!-- login form -->
             <form class="max-w-xl mx-auto font-inter" [formGroup]="form" (ngSubmit)="onSubmit()">
-                <div class="text-left">
+                
+                <div class="text-left mb-5">
                     <p class="text-xl font-bold font font-inter">Iniciar Sesión</p>
                 </div>
                 <div class="mb-5">
                     <label for="email" class="block mb-2 text-sm font-medium font-inter">Correo electrónico</label>
                     <input formControlName="email" type="email" id="email"
                         [ngClass]="{ 'is__invalid-input': submitted && f['email'].errors }"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full"
-                        placeholder="correo@gmail.com" />
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full" />
                     <div *ngIf="submitted && f['email'].errors" class="is__invalid-error">
                         <div *ngIf="f['email'].errors['required']">Campo obligatorio</div>
                         <div *ngIf="f['email'].errors['email']">Correo electrónico invalido</div>
                     </div>
                 </div>
-                <div class="mb-5">
+                <div class="mb-1">
                     <label for="password" class="block mb-2 text-sm font-medium font-inter">Contraseña
                     </label>
-                    <input [type]="passwordTextType ? 'text' : 'password'" id="password"
-                        [ngClass]="{ 'is__invalid-input': submitted && f['email'].errors }" placeholder=" "
-                        formControlName="password"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  w-full" />
-                    <span class="absolute right-5 cursor-pointer text-muted-foreground"
-                        (click)="togglePasswordTextType()">
-                        <img [src]="
-              !passwordTextType
-                ? 'assets/icons/outline/eye-off.svg'
-                : 'assets/icons/outline/eye.svg'
-            " />
-                    </span>
+
+                    <div class="relative">
+                        <input [type]="passwordTextType ? 'text' : 'password'" id="password"
+                            [ngClass]="{ 'is__invalid-input': submitted && f['password'].errors }" placeholder=" "
+                            formControlName="password"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  w-full" />
+                        <span
+                            class="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-muted-foreground"
+                            (click)="togglePasswordTextType()">
+                            <img [src]="
+                          !passwordTextType
+                            ? '../../../../../assets/icons/outline/eye-off.svg'
+                            : '../../../../../assets/icons/outline/eye.svg'
+                        " width="20px" />
+                        </span>
+                    </div>
+                    <div *ngIf="submitted && f['password'].errors" class="is__invalid-error">
+                        <div *ngIf="f['password'].errors['required']">Campo obligatorio</div>
+                    </div>
                 </div>
-                <div *ngIf="submitted && f['password'].errors" class="is__invalid-error">
-                    <div *ngIf="f['password'].errors['required']">Campo obligatorio</div>
+                <div *ngIf="errorMessage" class="w-full is__invalid-error font-medium text-base text-center mb-5">
+                    {{ errorMessage }}
                 </div>
-                <div class="mb-2 flex items-center justify-between space-x-3">
+
+                <div class="mb-5 flex items-center justify-between space-x-3">
                     <div class="flex items-center">
                         <input id="remember" type="checkbox" value=""
                             class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3" required />
                         <label for="remember" class="ml-2 block text-sm text-muted-foregroun">Remember me</label>
                     </div>
-                    <app-button routerLink="/auth/forgot-password" class="font-medium text-sm text-blue-kexbal-600">
+                    <app-button routerLink="/auth/forgot-password" class="font-medium text-sm text-blue-kexbal-600 cursor-pointer">
                         Forgot your password?
                     </app-button>
                 </div>
-                <div class="max-w-sm mx-auto mt-6">
+                <div class="max-w-sm mx-auto mb-5">
                     <button type="submit"
                         class="text-white-kexbal-100 bg-primary-color-600 w-full rounded-lg h-10 font-inter font-medium text-sm">Iniciar
                         sesión</button>
 
                 </div>
                 <!-- Sign-up -->
-                <div class="flex items-center text-sm font-medium text-gray-kexbal-900 mt-4 font-inter">
-                    ¿Aún no tienes una cuenta?
+                <div class="flex items-center text-sm font-medium text-gray-kexbal-900 font-inter">
+                    <span class="mr-1">¿Aún no tienes una cuenta?</span>
                     <button routerLink="/auth/sign-up" class="text-blue-kexbal-600 font-medium text-sm font-inter">
                         Crea una cuenta ahora
                     </button>
@@ -62,8 +75,6 @@
 
             </form>
         </div>
-
-
     </div>
     <div class="auth-bg hidden flex-1 items-center justify-center bg-primary-color-600 bg-cover lg:flex">
         <div class="max-w-2xl space-y-4 p-8 text-left text-white-kexbal-100">
@@ -77,5 +88,4 @@
             </p>
         </div>
     </div>
-
 </div>

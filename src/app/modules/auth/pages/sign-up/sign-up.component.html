@@ -1,1 +1,352 @@
-<p>sign-up works!</p>
+<section class="py-8 bg-white  lg:py-0 font-inter">
+    <div class="lg:flex">
+        <div class="hidden w-full max-w-md p-12 lg:h-screen lg:block bg-primary-color-600">
+            <div class="flex items-center mb-8 space-x-4">
+                <a href="#" class="flex items-center text-2xl font-semibold text-white">
+                    <img class="w-24 h-8" src="../../../../../assets/Logo/logo_white.svg" />
+                </a>
+            </div>
+            <div class="block p-8 text-white rounded-lg bg-primary-color-500">
+                <h3 class="mb-1 text-2xl font-semibold font-inter mb-5">Beneficios de la plataforma</h3>
+                <!-- List -->
+                <ul role="list" class="space-y-4 text-left text-base font-normal font-inter">
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-white text-base font-normal" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Sed ut perspiciatis unde omnis iste natus error sit</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Vluptatem accusantium doloremque lauda</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Natus error sit voluptatem accusantium</span>
+                    </li>
+                </ul>
+            </div>
+            <!--<button
+                class="inline-flex items-center text-sm font-medium text-white hover:text-white-kexbal-100 mt-5">
+                <svg class="w-6 h-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                Regresar
+            </button> -->
+        </div>
+        <div class="flex items-center mx-auto md:w-[42rem] px-4 md:px-8 xl:px-0">
+            <div class="w-full" *ngIf="currentStep === 1">
+                <div class="flex items-center justify-center mb-8 space-x-4 lg:hidden">
+                    <a href="#" class="flex items-center text-2xl font-semibold">
+                        <img class="w-24 h-8" src="../../../../../assets/Logo/logo_kexbal.svg" />
+                    </a>
+                </div>
+                <ol class="flex items-center mb-6 text-sm font-medium text-center text-gray-500 lg:mb-12 sm:text-base">
+                    <li
+                        class="flex items-center text-blue-kexbal-600 sm:after:content-[''] after:w-12 after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+                        <div
+                            class="flex items-center sm:block after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-blue-kexbal-600">
+                            <img class="w-4 h-4 mr-2 sm:mb-2 sm:w-6 sm:h-6 sm:mx-auto"
+                                src="../../../../../assets/icons/Vector.png" alt=""> <span
+                                class="hidden sm:inline-flex">Crear cuenta</span>
+                        </div>
+                    </li>
+                    <li
+                        class="flex items-center after:content-[''] after:w-12 after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+                        <div
+                            class="flex items-center text-[#BEB7FF] sm:block after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-blue-kexbal-600">
+                            <div class="mr-2 sm:mb-2 sm:mx-auto">2</div>
+                            <span class="hidden sm:inline-flex"> Verificación</span>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="flex items-center sm:block  text-[#BEB7FF]">
+                            <div class="mr-2 sm:mb-2 sm:mx-auto">3</div>
+                            <span class="hidden sm:inline-flex"> Confirmación</span>
+                        </div>
+                    </li>
+                </ol>
+                <h1 class="mb-4 text-2xl font-extrabold tracking-tight text-blue-kexbal-900 sm:mb-6 leding-tight">
+                    Información personal</h1>
+                <form class="max-w-xl font-inter" [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="grid gap-5 my-6 sm:grid-cols-2">
+                        <div>
+                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900">Nombres</label>
+                            <input type="text" formControlName="first_name" name="first_name" id="first_name"
+                                [ngClass]="{ 'is__invalid-input': (submitted || form.get('first_name')?.touched ) && f['first_name'].errors }"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                            <div *ngIf="(submitted || form.get('first_name')?.touched ) && form.get('first_name')?.invalid"
+                                class="is__invalid-error text-sm font-normal font-inter">
+                                El campo es obligatorio.
+                            </div>
+                        </div>
+                        <div>
+                            <label for="last-name"
+                                class="block mb-2 text-sm font-medium text-gray-900">Apellidos</label>
+                            <input type="text" formControlName="last_name" name="last-name" id="last-name"
+                                [ngClass]="{ 'is__invalid-input': (submitted || form.get('last_name')?.touched ) && f['last_name'].errors }"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                            <div *ngIf="(submitted || form.get('last_name')?.touched ) && form.get('last_name')?.invalid"
+                                class="is__invalid-error text-sm font-normal font-inter">
+                                El campo es obligatorio.
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Correo
+                                electrónico</label>
+                            <input type="email" formControlName="email" name="email" id="email"
+                                [ngClass]="{ 'is__invalid-input': (submitted || form.get('email')?.touched ) && f['email'].errors }"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                            <div *ngIf="(submitted || form.get('email')?.touched ) && f['email'].errors"
+                                class="is__invalid-error">
+                                <div class="text-sm font-normal font-inter" *ngIf="f['email'].errors['required']">El
+                                    Campo obligatorio</div>
+                                <div class="text-sm font-normal font-inter" *ngIf="f['email'].errors['email']">Correo
+                                    electrónico invalido</div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Teléfono</label>
+                            <input type="tel" formControlName="phone" name="phone" id="phone"
+                                [ngClass]="{ 'is__invalid-input': (submitted || form.get('phone')?.touched ) && f['phone'].errors }"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" />
+                            <div *ngIf="(submitted || form.get('phone')?.touched ) && f['phone'].errors"
+                                class="is__invalid-error">
+                                <div class="text-sm font-normal font-inter" *ngIf="f['phone'].errors['required']">
+                                    El campo es obligatorio.
+                                </div>
+                                <div class="text-sm font-normal font-inter" *ngIf="f['phone'].errors['pattern']">
+                                    Número de teléfono inválido.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div class="w-full">
+                        <label for="dpi-number" class="block mb-2 text-sm font-medium text-gray-900">Número de
+                            DPI</label>
+                        <input type="number" formControlName="dpi" name="dpi-number" id="phone-number"
+                            [ngClass]="{ 'is__invalid-input': (submitted || form.get('dpi')?.touched ) && f['dpi'].errors }"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                        <div *ngIf="(submitted || form.get('dpi')?.touched ) && f['dpi'].errors"
+                            class="is__invalid-error">
+                            <div class="text-sm font-normal font-inter" *ngIf="f['dpi'].errors['required']">
+                                El campo es obligatorio.
+                            </div>
+                        </div>
+                    </div -->
+                    <div class="grid gap-5 my-6 sm:grid-cols-2">
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900">Contraseña</label>
+                            <input type="password" formControlName="password" name="password" id="password"
+                                [ngClass]="{ 'is__invalid-input': (submitted || form.get('password')?.touched ) && f['password'].errors }"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                            <div *ngIf="(submitted || form.get('password')?.touched ) && f['password'].errors"
+                                class="is__invalid-error">
+                                <div class="text-sm font-normal font-inter" *ngIf="f['password'].errors['required']">
+                                    El campo es obligatorio.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="password_confirm" class="block mb-2 text-sm font-medium text-gray-900">Confirmar
+                                Contraseña</label>
+                            <input type="password" formControlName="password_confirm" name="password_confirm"
+                                [ngClass]="{ 'is__invalid-input': (submitted || form.get('password_confirm')?.touched ) && f['password_confirm'].errors }"
+                                id="password_confirm"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                            <div *ngIf="(submitted || form.get('password_confirm')?.touched ) && f['password_confirm'].errors"
+                                class="is__invalid-error">
+                                <div class="text-sm font-normal font-inter"
+                                    *ngIf="f['password_confirm'].errors['required']">
+                                    El campo es obligatorio.
+                                </div>
+                                <div *ngIf="f['password_confirm'].errors['passwordMatchValidator']"
+                                    class="text-sm font-normal font-inter">
+                                    Las contraseñas no coinciden.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6 space-y-3">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="terms" formControlName="terminos_condiciones" aria-describedby="terms"
+                                    type="checkbox"
+                                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300  dark:focus:ring-primary-600 dark:ring-offset-gray-800">
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="terms" class="font-light text-gray-500 dark:text-gray-300">Estoy de acuerdo
+                                    con los <a class="font-normal text-blue-kexbal-700 hover:underline"
+                                        href="#">Terminos y condiciones,</a> y las <a
+                                        class="font-norml  text-blue-kexbal-700 hover:underline" href="#">políticas de
+                                        privacidad.</a></label>
+                            </div>
+                            <div *ngIf="submitted && f['terminos_condiciones'].hasError('requiredTrue')"
+                                class="is__invalid-error">
+                                Debes aceptar los términos y condiciones.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button type="submit"
+                            class="w-full text-white bg-primary-color-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 sm:py-3.5 text-center">Continuar
+                            al siguiente paso</button>
+                    </div>
+                </form>
+            </div>
+            <div class="w-full" *ngIf="currentStep === 2">
+                <div class="flex items-center justify-center mb-8 space-x-4 lg:hidden">
+                    <a href="#" class="flex items-center text-2xl font-semibold">
+                        <img class="w-24 h-8" src="../../../../../assets/Logo/logo_kexbal.png" />
+                    </a>
+                </div>
+                <ol class="flex items-center mb-6 text-sm font-medium text-center text-gray-500 lg:mb-12 sm:text-base">
+                    <li
+                        class="flex items-center text-blue-kexbal-600 sm:after:content-[''] after:w-12 after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+                        <div
+                            class="flex items-center sm:block after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-blue-kexbal-600">
+
+                            <img class="w-4 h-4 mr-2 sm:mb-2 sm:w-6 sm:h-6 sm:mx-auto"
+                                src="../../../../../assets/icons/Vector.png" alt=""> <span
+                                class="hidden sm:inline-flex">Crear cuenta</span>
+                        </div>
+                    </li>
+                    <li
+                        class="flex items-center after:content-[''] after:w-12 after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+                        <div
+                            class="flex items-center sm:block after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-blue-kexbal-600">
+
+                            <img class="w-4 h-4 mr-2 sm:mb-2 sm:w-6 sm:h-6 sm:mx-auto"
+                                src="../../../../../assets/icons/Vector.png" alt="">
+                            <span class="hidden sm:inline-flex text-blue-kexbal-600 font-inter"> Verificación</span>
+                        </div>
+                    </li>
+                    <li class="flex items-center ">
+                        <div class="flex items-center sm:block font-inter text-[#BEB7FF]">
+                            <div class="mr-2 sm:mb-2 sm:mx-auto">3</div>
+                            <span class="hidden sm:inline-flex"> Confirmación</span>
+                        </div>
+                    </li>
+                </ol>
+                <h1
+                    class="mb-4 text-2xl font-extrabold tracking-tight text-blue-kexbal-900 sm:mb-6 leding-tight font-inter text-center">
+                    Verifica que tus datos esten correctos</h1>
+                <div>
+                    <div class="w-full bg-white border border-gray-200 rounded-lg shadow p-10">
+                        <div class="p-8 sm:rounded-lg">
+                            <div class="flex justify-between py-2">
+                                <p class="text-left text-base font-medium text-gray-kexbal-500 font-inter">Nombre
+                                    completo:</p>
+                                <span>{{datosForm.first_name}} {{datosForm.last_name}}</span>
+                            </div>
+                            <div class="flex justify-between py-2">
+                                <p class="text-left text-base font-medium text-gray-kexbal-500 font-inter">Corréo:</p>
+                                <span>{{datosForm.email}}</span>
+                            </div>
+                            <div class="flex justify-between py-2">
+                                <p class="text-left text-base font-medium text-gray-kexbal-500 font-inter">Teléfono:
+                                </p>
+                                <span class="">{{datosForm.phone}}</span>
+                            </div>
+                            <!--div class="flex justify-between py-2">
+                                <p class="text-left text-base font-medium text-gray-kexbal-500 font-inter">Número de
+                                    DPI:
+                                </p>
+                                <span class="">{{datosForm.dpi}}</span>
+                            </div-->
+
+                        </div>
+                    </div>
+                    <div *ngIf="errorMessage" class="w-full is__invalid-error font-medium text-base text-center">
+                        {{ errorMessage }}
+                    </div>
+                </div>
+                <button (click)="OnSubmitRegistry()"
+                    class="w-full text-white bg-primary-color-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 sm:py-3.5 text-center mt-5">Continuar
+                    al siguiente paso</button>
+                <div class="mt-2">
+                    <button (click)="prevStep()"
+                        class="w-full inline-flex items-center justify-center border border-gray-300  bg-gray-50 text-gray-900 font-medium rounded-lg text-sm text-center px-5 py-1.5 sm:py-3.5 mt-5"><svg
+                            class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                        </svg>
+                        Regresar a modificar mis datos</button>
+                </div>
+            </div>
+            <div class="w-full" *ngIf="currentStep === 3">
+                <div class="flex items-center justify-center mb-8 space-x-4 lg:hidden">
+                    <a href="#" class="flex items-center text-2xl font-semibold">
+                        <img class="w-24 h-8" src="../../../../../assets/Logo/logo_kexbal.png" />
+                    </a>
+                </div>
+                <ol class="flex items-center mb-6 text-sm font-medium text-center text-gray-500 lg:mb-12 sm:text-base">
+                    <li
+                        class="flex items-center text-blue-kexbal-600 sm:after:content-[''] after:w-12 after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+                        <div
+                            class="flex items-center sm:block after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-blue-kexbal-600">
+
+                            <img class="w-4 h-4 mr-2 sm:mb-2 sm:w-6 sm:h-6 sm:mx-auto"
+                                src="../../../../../assets/icons/Vector.png" alt=""/> <span
+                                class="hidden sm:inline-flex">Crear cuenta</span>
+                        </div>
+                    </li>
+                    <li
+                        class="flex items-center after:content-[''] after:w-12 after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10">
+                        <div
+                            class="flex items-center sm:block after:content-['/'] sm:after:hidden after:mx-2 after:font-light after:text-blue-kexbal-600">
+
+                            <img class="w-4 h-4 mr-2 sm:mb-2 sm:w-6 sm:h-6 sm:mx-auto"
+                                src="../../../../../assets/icons/Vector.png" alt=""/>
+                            <span class="hidden sm:inline-flex text-blue-kexbal-600 font-inter"> Verificación</span>
+                        </div>
+                    </li>
+                    <li class="flex items-center ">
+                        <div class="flex items-center sm:block font-inter text-[#BEB7FF]">
+                            <img class="w-4 h-4 mr-2 sm:mb-2 sm:w-6 sm:h-6 sm:mx-auto"
+                                src="../../../../../assets/icons/Vector.png" alt=""/>
+                            <span class="hidden sm:inline-flex text-blue-kexbal-600"> Confirmación</span>
+                        </div>
+                    </li>
+                </ol>
+
+                <h1 class="font-inter font-extrabold text-2xl text-center mb-5">Verifica tut correo electrónico</h1>
+                <p class="font-normal text-base text-gray-500 font-inter mb-5">Te hemos envido un enlace al correo electronico para confirmar tu usuario.</p>
+                <p class="p-4 text-sm text-gray-500 rounded-lg bg-gray-50 font-inter font-normal">Asegúrate de mantener
+                    esta ventana abierta mientras revisas tu bandeja de entrada.</p>
+
+            </div>
+        </div>
+    </div>
+</section>

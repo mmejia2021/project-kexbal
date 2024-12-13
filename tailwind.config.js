@@ -64,8 +64,9 @@ module.exports = {
       },
       colors: {
         'blue-kexbal': {
-          900: '#150F4D',
           600: '#4A3BD3',
+          700: '#382CA6',
+          900: '#150F4D',
         },
         'gray-kexbal': {
           500: '#667085',
@@ -77,10 +78,11 @@ module.exports = {
       },
       backgroundColor: {
         'primary-color': {
-          600: '#4A3BD3',
-          800: '#271E7A',
+          100: "#EDEBFE",
           500: '#5C4AFF',
-          100: "#EDEBFE"
+          600: '#4A3BD3',
+          700: '#382CA6',          
+          800: '#271E7A',
         }
       },
       fontFamily: {
