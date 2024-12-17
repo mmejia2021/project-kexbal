@@ -5,10 +5,8 @@
     background-position: left;
 }
 
-.datatable-wrapper .datatable-top {
-    display: none !important;
-}
-
-tbody {
-    font-family: 'inter' !important;
+.bank-box{
+    width: 90px;
+    height: auto;
+    text-align: center;
 }
