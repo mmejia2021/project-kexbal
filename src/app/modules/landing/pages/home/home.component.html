@@ -1,13 +1,13 @@
-<section id="seccion_1" class="pt-10 lg:pt-10 md:pt-10 sm:pt-10">
-    <div class="px-4 max-w-screen-2xl">
-        <div class="pt-24 lg:pt-24 md:pt-24 sm:pt-24">
-            <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter">
+<section id="seccion_1" class="pt-10 lg:pt-24 md:pt-24 sm:pt-24">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 xl:gap-9 sm:py-16 lg:px-0">
+        <div>
+            <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter">
                 ¡Vende y Compra</p>
-            <p class="text-blue-kexbal-600 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter">
+            <p class="text-blue-kexbal-600 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter">
                 Dólares Bancarizados</p>
-            <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter"> a
+            <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter"> a
                 las mejores tasas!</p>
-            <!--div class="mt-4 md:mt-7">
+            <div class="mt-4 md:mt-7">
                 <button (click)=toggleDisplay()
                     class="inline-flex rounded-md px-3 py-2 text-base font-medium bg-primary-color-500 text-white-kexbal-100 font-inter">Comprar</button>
                 <button (click)=toggleDisplayCalculate()
@@ -15,63 +15,65 @@
                         class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M19 12H5m14 0-4 4m4-4-4-4" />
+                            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
                     </svg>
+
                 </button>
-            </div-->
+            </div>
         </div>
-        <div class="mx-auto sm:w-[70%] w-full mb-20">
-            <div class="relative  overflow-x-auto shadow-md sm:rounded-lg mt-10" [hidden]="isShowTable">
-                <table id="myTable" class="font-medium text-xs font-inter">
-                    <thead>
+        <div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg" [hidden]="isShowTable">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-kexbal-900 font-inter">
+                    <thead class="text-xs text-gray-500 uppercase bg-white-kexbal-100">
                         <tr>
-                            <th>
-                                <span class="flex items-center">
-                                    USUARIO
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
+                            <th scope="col" class="px-6 py-3">
+                                USUARIO
                             </th>
-                            <th data-type="date" data-format="YYYY/DD/MM">
-                                <span class="flex items-center">
-                                    UDS
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
+                            <th scope="col" class="px-6 py-3">
+                                UDS
                             </th>
-                            <th>
-                                <span class="flex items-center">
-                                    TASA
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
+                            <th scope="col" class="px-6 py-3">
+                                TASA
                             </th>
-                            <th>
-                                <span class="flex items-center">
-                                    BANCO
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
-                                    </svg>
-                                </span>
+                            <th scope="col" class="px-6 py-3">
+                                BANCO
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
                             </th>
                         </tr>
                     </thead>
-                    <tbody class="font-medium text-xs font-inter">
-                    
+                    <tbody class="font-medium text-xs">
+                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 border-b " *ngFor="let item of ofertas">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                               {{item.id_seller.username}}
+                            </th>
+                            <td class="px-6 py-4 text-sm font-semibold text-gray-900">
+                                ${{item.available_offer}}
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                               
+                                ${{item.kexbal_exchange_rate}}
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <div class="bg-primary-color-100 p-2 rounded-md bank-box">  {{item.bank}}</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <button
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
+                            </td>
+                        </tr>
+                        
                     </tbody>
                 </table>
                 
             </div>
-            <!--div [hidden]="isShowCalculadora">
+            <div [hidden]="isShowCalculadora">
                 <div class="max-w-[35rem] bg-white border border-gray-200 rounded-lg shadow p-10">
                     <form class="max-w-xl mx-auto font-inter" [formGroup]="form">
                         <div class="flex">
                             <div class="mb-5 mr-4">
                                 <label for="ofertaUsa" class="block mb-2 text-sm font-medium font-inter">Oferta en
-       
                                     USD</label>
                                 <input (change)=calcularResultado() placeholder="$100" formControlName="ofertaUsa" type="text" mask="separator.2" thousandSeparator="," id="ofertaUsa"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  w-full" />
@@ -109,13 +111,11 @@
                     </div>
                 </div>
 
-            </div-->
-
+            </div>
         </div>
 
     </div>
 </section>
-
 <section id="seccion_2">
     <section class="bg-white-kexbal-100">
         <div
