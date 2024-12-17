@@ -34,13 +34,14 @@ export class Menu {
         items: [],
         link: ''
     },
-    /*{
-        group: 'Inicia sesion',
-       // route: '/auth/sign-in',
+    {
+        group: 'Marketplace',
+        route: '/kexbal/marketplace',
         separator: true,
         items: [],
+        link: ''
     },
-    {
+   /* {
         group: 'Registrate',
         separator: true,
         items: [],

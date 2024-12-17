@@ -10,6 +10,32 @@
 .bg-gray-100 {
     background: transparent !important;
 }
+
+.datatable-wrapper .datatable-top {
+    display: none !important;
+}
+.datatable-info {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 22px;
+}
+li.datatable-pagination-list-item.datatable-active {
+    background-color: #DEDBFF;
+   
+}
+
+button.datatable-pagination-list-item-link {
+    color: #382CA6 !important;
+    font-family: 'Inter' !important;
+    font-size: 14px !important;
+}
+.datatable-wrapper .datatable-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 22px;
+}
 @layer components {
     .dropdown-content {
         @apply pointer-events-none scale-95 opacity-0 duration-100 ease-in;
