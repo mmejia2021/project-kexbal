@@ -7,7 +7,7 @@
                 Dólares Bancarizados</p>
             <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-left text-center font-extrabold font-inter"> a
                 las mejores tasas!</p>
-            <div class="mt-4 md:mt-7">
+            <div class="mt-4 md:mt-7 mb-7 text-center sm:text-left">
                 <button (click)=toggleDisplay()
                     class="inline-flex rounded-md px-3 py-2 text-base font-medium bg-primary-color-500 text-white-kexbal-100 font-inter">Comprar</button>
                 <button (click)=toggleDisplayCalculate()
@@ -60,7 +60,7 @@
                             </td>
                             <td class="px-6 py-4">
                                 <button
-                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2">Comprar</button>
+                                    class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2" routerLink="/auth/sign-in">Comprar</button>
                             </td>
                         </tr>
                         
@@ -90,11 +90,11 @@
                         <p class="text-center text-base font-normal text-gray-900 font-inter">Resumen de la Oferta</p>
                         <div class="flex justify-between py-2">
                             <p class="text-left text-base font-normal text-gray-900 font-inter">Venderás</p>
-                            <span>{{monto1}}</span>
+                            <span>Q{{monto1 | currency:'Q':'symbol':'1.2-2':'es' }} </span>
                         </div>
                         <div class="flex justify-between py-2">
                             <p class="text-left text-base font-normal text-gray-900 font-inter">Tasa</p>
-                            <span>{{monto2}}</span>
+                            <span>Q{{monto2 | currency:'Q':'symbol':'1.2-2':'es' }}</span>
                         </div>
                         <div class="flex justify-between py-2 border-b-2">
                             <p class="text-left text-base font-normal text-gray-900 font-inter">Servicio
@@ -103,10 +103,10 @@
                         </div>
                         <div class="flex justify-between py-4">
                             <p class="text-lg font-extrabold font-inter">Recibirás</p>
-                            <span>{{resultado}}</span>
+                            <span class="font-extrabold">Q{{resultado | currency:'Q':'symbol':'1.2-2':'es'}}</span>
                         </div>
-                        <button
-                            class="w-full rounded-md px-3 py-3 text-xs font-medium bg-primary-color-500 text-white-kexbal-100 font-inter">Publicar
+                        <button [disabled]="form.invalid"
+                            class="w-full rounded-md px-3 py-3 text-xs font-medium bg-primary-color-500 text-white-kexbal-100 font-inter"  routerLink="/auth/sign-in">Publicar
                             Oferta</button>
                     </div>
                 </div>

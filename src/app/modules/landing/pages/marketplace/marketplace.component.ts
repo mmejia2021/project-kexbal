@@ -12,7 +12,7 @@ import { DataTable, convertJSON } from "simple-datatables";
   styleUrl: './marketplace.component.css'
 })
 export class MarketplaceComponent implements OnInit {
-  
+
   ofertas: any[] = [];  // Aquí se guardan las ofertas obtenidas
   tableData: any[] = []; // Aquí se guardan los datos transformados para la tabla
   
@@ -49,7 +49,7 @@ export class MarketplaceComponent implements OnInit {
         },
         searchable: false,
         fixedHeight: true,
-        perPage: 6,
+        perPage: 10,
       });
       dataTable.insert(newData)
 

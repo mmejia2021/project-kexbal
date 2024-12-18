@@ -4,11 +4,12 @@ import { Router, RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { initFlowbite } from 'flowbite';
 import { ApiService } from '../../../../services/api.service';
+import { CurrencyPipe, CommonModule  } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, RouterLink, NgClass, NgIf, NgFor],
+  imports: [FormsModule, ReactiveFormsModule, RouterLink, NgClass, NgIf, NgFor, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
