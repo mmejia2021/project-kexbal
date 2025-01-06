@@ -5,13 +5,13 @@ export class Menu {
     {
       group: 'Inicio',
       separator: false,
-      route: '/kexbal/home',
+      route: 'home',
       items: [],
       link: ''
     },
     {
       group: 'Comó funciona',
-      separator: true,
+      separator: false,
       items: [],
       link: ''
     },
@@ -21,10 +21,10 @@ export class Menu {
       items: [],
       link: ''
     },
-    {
+    { 
         group: 'Nosotros',
         separator: false,
-        route: '/kexbal/nosotros',
+        route: 'nosotros',
         items: [],
         link: ''
     },
@@ -36,15 +36,10 @@ export class Menu {
     },
     {
         group: 'Marketplace',
-        route: '/kexbal/marketplace',
+        route: 'marketplace',
         separator: true,
         items: [],
         link: ''
-    },
-   /* {
-        group: 'Registrate',
-        separator: true,
-        items: [],
-    },*/
+    }
   ];
 }

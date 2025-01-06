@@ -1,0 +1,19 @@
+
+.menu-item {
+  }
+/* Estilo al pasar el mouse */
+.menu-item:hover {
+    color: #5C4AFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el enlace activo */
+  .menu-item.active {
+    color: #5C4AFF;
+    text-decoration: underline;
+  }
+
+  .active {
+    text-decoration: underline;
+  }

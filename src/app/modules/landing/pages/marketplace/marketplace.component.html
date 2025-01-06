@@ -8,7 +8,7 @@
             <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter"> a
                 las mejores tasas!</p>
         </div>
-        <div class="mx-auto sm:w-[70%] w-full mb-20">
+        <div class="px-4 mx-auto max-w-screen-lg  mb-20">
             <div class="relative  overflow-x-auto shadow-md sm:rounded-lg mt-10">
                 <table id="myTable" class="font-medium text-xs font-inter">
                     <thead>
@@ -16,43 +16,183 @@
                             <th>
                                 <span class="flex items-center">
                                     USUARIO
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4" />
                                     </svg>
                                 </span>
                             </th>
                             <th data-type="date" data-format="YYYY/DD/MM">
                                 <span class="flex items-center">
-                                    UDS
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    USD
+                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4" />
                                     </svg>
                                 </span>
                             </th>
                             <th>
                                 <span class="flex items-center">
                                     TASA
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4" />
                                     </svg>
                                 </span>
                             </th>
                             <th>
                                 <span class="flex items-center">
                                     BANCO
-                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"/>
+                                    <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4" />
                                     </svg>
                                 </span>
                             </th>
                         </tr>
                     </thead>
                     <tbody class="font-medium text-xs font-inter">
-                    
+
                     </tbody>
                 </table>
-                
+
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="seccion_tabledemo" class="pt-10 lg:pt-10 md:pt-10 sm:pt-10">
+    <div class="px-4 max-w-screen-2xl">
+        <div class="pt-24 lg:pt-24 md:pt-24 sm:pt-24">
+            <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter">
+                ¡Vende y Compra</p>
+            <p class="text-blue-kexbal-600 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter">
+                Dólares Bancarizados</p>
+            <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter"> a
+                las mejores tasas!</p>
+        </div>
+        <div class="px-4 mx-auto max-w-screen-lg  mb-20 mt-10">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="p-4">
+                                <button (click)="sort('usuario')" class="datatable-sorter"><span
+                                        class="flex items-center"> USUARIO <svg
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                            <path stroke="currentColor"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                        </svg></span></button>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button (click)="sort('usd')" class="datatable-sorter"><span
+                                    class="flex items-center"> USD <svg
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                    </svg></span></button>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button (click)="sort('tasa')" class="datatable-sorter"><span
+                                    class="flex items-center"> TASA <svg
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                    </svg></span></button>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button (click)="sort('banco')" class="datatable-sorter"><span
+                                    class="flex items-center"> BANCO <svg _ngcontent-ng-c1515712050=""
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                    </svg></span></button>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"  *ngFor="let item of sortedData">
+                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                                {{item.id_seller.username}}
+                            </th>
+                            <td class="px-6 py-4 text-sm font-semibold text-gray-900">
+                                {{item.available_offer | currency}}
+                            </td>
+                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+
+                                {{item.kexbal_exchange_rate | currency}}
+                            </td>
+                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                                <div class="bg-primary-color-100 p-2 rounded-md bank-box"> {{item.bank}}</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <button class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2"
+                                    routerLink="/auth/sign-in">Comprar</button>
+                            </td>
+                        </tr>
+                  
+                    </tbody>
+                </table>
+                <nav class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 datatable-bottom"
+                    aria-label="Table navigation">
+                    <span
+                        class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto datatable-info">Mostrar
+                        <span class="font-semibold text-gray-900 dark:text-white">1-10</span> de <span
+                            class="font-semibold text-gray-900 dark:text-white">1000</span></span>
+                    <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
+                        <li>
+                            <a
+                                class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                                  </svg>
+                                  </a>
+                        </li>
+                        <li>
+                            <a
+                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                        </li>
+                        <li>
+                            <a
+                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                        </li>
+                        <li>
+                            <a aria-current="page"
+                                class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                        </li>
+                        <li>
+                            <a
+                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                        </li>
+                        <li>
+                            <a 
+                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+                        </li>
+                        <li>
+                            <a
+                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>
+                                  </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
     </div>
 </section>

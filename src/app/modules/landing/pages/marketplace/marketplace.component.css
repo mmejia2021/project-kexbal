@@ -1,0 +1,18 @@
+.bank-box{
+    width: 90px;
+    height: auto;
+    text-align: center;
+}
+
+.datatable-wrapper .datatable-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 22px;
+}
+
+.datatable-bottom {
+    margin-bottom: 1rem;
+    margin-right: 22px;
+    color: #6B7280;
+    font-size: 0.875rem;
+}

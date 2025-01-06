@@ -42,20 +42,12 @@ export class MarketplaceComponent implements OnInit {
         item.bank                 // Cuarta columna: Banco
       ]);
 
-      // Transformamos el array para crear el formato deseado
-    const dato =  this.tableData.map(item => ({
-      usuario: item[0],
-      usd: item[1],
-      tasa: item[2],
-      banco: item[3],
-    }));
-
-   
-      
+      console.log(this.tableData); // Muestra el nuevo formato
       let newData = {
         headings: ["Heading 1", "Heading 2", "Heading 3", "Heading 4", "Heading 5"],
         data: this.tableData
     };
+      console.log(newData)
       const dataTable = new DataTable("#myTable",{
         labels: {
           perPage: "registros por página", // Selector de registros por página
@@ -72,6 +64,7 @@ export class MarketplaceComponent implements OnInit {
   }
 
   get sortedData() {
+    console.log('aqui ban las ofertas' +this.ofertas)
     let sorted = [...this.ofertas];
 
     if (this.sortedColumn) {

@@ -1,10 +1,54 @@
-<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1" *ngFor="let menu of menuService.pagesMenu">
-  <!-- Button -->
-  <button [routerLink]="menu.route" [ngClass]="
-        menu.selected || menu.active
-          ? 'bg-red-600 text-black'
-          : 'text-black hover:bg-card hover:text-purple-500 hover:underline'
-      " class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0">
+<!--div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1" 
+*ngFor="let menu of menuService.pagesMenu">
+
+  <a [routerLink]="menu.route"  
+  routerLinkActive="active"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
     <span>{{ menu.group }}</span>
-  </button>
+  </a>
+</div-->
+
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a [routerLink]="'home'"  
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+    <span>Inicio</span>
+  </a>
+</div>
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a [routerLink]="'home'"  
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+    <span>Como funciona</span>
+  </a>
+</div>
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a [routerLink]="'home#seccion_2'"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+    <span>Preguntas</span>
+  </a>
+</div>
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a [routerLink]="'nosotros'"  
+  routerLinkActive="active"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+    <span>Nosotros</span>
+  </a>
+</div>
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a [routerLink]="'home#seccion_3'"  
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+    <span>Contacto</span>
+  </a>
+</div>
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a [routerLink]="'marketplace'"  
+  routerLinkActive="active"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+    <span>Marketplace</span>
+  </a>
 </div>

@@ -1,6 +1,7 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxParallaxModule } from '@yoozly/ngx-parallax';
 import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { registerLocaleData } from '@angular/common';
@@ -18,9 +19,11 @@ bootstrapApplication(AppComponent, {
       BrowserModule,
       AppRoutingModule,
       HttpClientModule,
+      NgxParallaxModule
     ),
     
     provideAnimations(),
-    { provide: LOCALE_ID, useValue: 'es' }
+    { provide: LOCALE_ID, useValue: 'en-US' }
   ],
+  
 }).catch((err) => console.error(err));

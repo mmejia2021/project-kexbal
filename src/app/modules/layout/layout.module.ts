@@ -3,12 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 
+import { RouterModule, Routes  } from '@angular/router';
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    RouterModule
   ]
 })
 export class LayoutModule { }

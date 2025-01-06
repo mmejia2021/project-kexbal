@@ -16,10 +16,11 @@
 }
 .datatable-info {
     font-family: 'Inter';
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     margin-left: 22px;
+    color: #6B7280;
+    font-size: 0.875rem;
 }
 li.datatable-pagination-list-item.datatable-active {
     background-color: #DEDBFF;
@@ -36,6 +37,16 @@ button.datatable-pagination-list-item-link {
     margin-bottom: 1rem;
     margin-right: 22px;
 }
+
+  /* Estilo para el enlace activo */
+  .menu-item.active {
+    color: #5C4AFF;
+    text-decoration: underline;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
 @layer components {
     .dropdown-content {
         @apply pointer-events-none scale-95 opacity-0 duration-100 ease-in;

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { NgClass, NgFor, NgIf } from '@angular/common';
+import { NgClass, NgFor, NgIf,  CurrencyPipe, DatePipe, TitleCasePipe } from '@angular/common';
 import { initFlowbite } from 'flowbite';
 import { ApiService } from '../../../../services/api.service';
-import { CurrencyPipe, CommonModule  } from '@angular/common';
+import { ParallaxStandaloneDirective } from '@yoozly/ngx-parallax';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, RouterLink, NgClass, NgIf, NgFor, CommonModule],
+  imports: [FormsModule, ReactiveFormsModule, RouterLink, NgClass, NgIf, NgFor,  CurrencyPipe, DatePipe, TitleCasePipe, ParallaxStandaloneDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -47,8 +47,7 @@ export class HomeComponent implements OnInit {
     }, 2000);
 
   }
-
-
+  
   calcularResultado() {
     this.monto1 = this.form.value.ofertaUsa || 0.00;
     this.monto2 = this.form.value.tasaGt || 0.00;

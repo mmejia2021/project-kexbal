@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../../services/menu.service';
 import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
-import { NavbarMobileComponent } from './navbar-mobile/navbar-mobile.component';
 import { RouterLink } from '@angular/router';
 import { initFlowbite } from 'flowbite';
 
@@ -12,7 +11,6 @@ import { initFlowbite } from 'flowbite';
     standalone: true,
     imports: [
         NavbarMenuComponent,
-        NavbarMobileComponent,
         RouterLink
     ],
 })
@@ -23,8 +21,4 @@ export class NavbarComponent implements OnInit {
     initFlowbite();
   }
 
-
-  public toggleMobileMenu(): void {
-    this.menuService.showMobileMenu = true;
-  }
 }

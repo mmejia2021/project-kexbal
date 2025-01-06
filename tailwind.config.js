@@ -75,6 +75,9 @@ module.exports = {
         'white-kexbal': {
           100: '#F2F4F7', 
         },
+        'purpuple-kexbal': {
+          500: '#5C4AFF', 
+        },
       },
       backgroundColor: {
         'primary-color': {
