@@ -11,6 +11,12 @@
     background: transparent !important;
 }
 
+.bank-box{
+    width: 120px;
+    height: auto;
+    text-align: center;
+}
+
 .datatable-wrapper .datatable-top {
     display: none !important;
 }
@@ -47,6 +53,72 @@ button.datatable-pagination-list-item-link {
   .active {
     text-decoration: underline;
   }
+
+  .ngx-pagination {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    border-color: #E5E7EB;
+    border-style: solid;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-controls button.active {
+  background-color: #DEDBFF;
+  color: #fff;
+}
+
+.pagination-controls button:hover {
+  background-color: #DEDBFF;
+  color: #fff;
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #DEDBFF !important;
+    color: #382CA6 !important;
+    cursor: pointer;
+    font-size: 14px !important;
+    border-color: #E5E7EB !important;
+    border-style: solid !important;
+}
+.ngx-pagination li {
+    border-color: #E5E7EB !important;
+    border-style: solid !important;
+    margin-right: 0px !important;
+}
+.ngx-pagination li {
+    border: solid 1px;
+}
+.ngx-pagination .pagination-previous a:before, .ngx-pagination .pagination-previous.disabled:before {
+    content: "\ab";
+    display: none !important;
+    margin-right: 0.5rem;
+}
+.ngx-pagination .pagination-next a:after, .ngx-pagination .pagination-next.disabled:after {
+    content: "\bb";
+    display: none !important;
+    margin-left: 0.5rem;
+}
+li.pagination-previous {
+    border-radius: 10px 0px 0px 10px !important;
+}
+li.pagination-next {
+    border-radius: 0px 10px 10px 0px !important;
+}
 @layer components {
     .dropdown-content {
         @apply pointer-events-none scale-95 opacity-0 duration-100 ease-in;

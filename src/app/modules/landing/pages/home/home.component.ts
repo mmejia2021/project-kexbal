@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
-import { NgClass, NgFor, NgIf,  CurrencyPipe, DatePipe, TitleCasePipe } from '@angular/common';
+import { Router, RouterLink, NavigationEnd } from '@angular/router';
+import { NgClass, NgFor, NgIf,  CurrencyPipe, DatePipe, TitleCasePipe, ViewportScroller } from '@angular/common';
 import { initFlowbite } from 'flowbite';
 import { ApiService } from '../../../../services/api.service';
-import { ParallaxStandaloneDirective } from '@yoozly/ngx-parallax';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, RouterLink, NgClass, NgIf, NgFor,  CurrencyPipe, DatePipe, TitleCasePipe, ParallaxStandaloneDirective],
+  imports: [FormsModule, ReactiveFormsModule, RouterLink, NgClass, NgIf, NgFor,  CurrencyPipe, DatePipe, TitleCasePipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -28,14 +27,16 @@ export class HomeComponent implements OnInit {
   monto1: number | null = 0.00;
   monto2: number | null = 0.00;
 
-  constructor(private readonly _formBuilder: FormBuilder, private readonly _router: Router, public apiService: ApiService) { }
+  constructor(private readonly _formBuilder: FormBuilder, private readonly _router: Router, public apiService: ApiService, ) { 
 
+  }
+  
   ngOnInit(): void {
     this.form = this._formBuilder.group({
       ofertaUsa: ['', [Validators.required]],
       tasaGt: ['', Validators.required],
     });
-
+    
     initFlowbite();
 
     setTimeout(() => {
@@ -46,7 +47,15 @@ export class HomeComponent implements OnInit {
 
     }, 2000);
 
+       // Escuchar cambios de ruta y re-inicializar Flowbite
+       this._router.events.subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          initFlowbite();
+        }
+      });
+
   }
+
   
   calcularResultado() {
     this.monto1 = this.form.value.ofertaUsa || 0.00;

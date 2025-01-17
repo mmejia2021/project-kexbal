@@ -23,7 +23,7 @@
                                     </svg>
                                 </span>
                             </th>
-                            <th data-type="date" data-format="YYYY/DD/MM">
+                            <th>
                                 <span class="flex items-center">
                                     USD
                                     <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,13 @@
                                     </svg>
                                 </span>
                             </th>
+                            <th>
+
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="font-medium text-xs font-inter">
+                        
 
                     </tbody>
                 </table>
@@ -65,7 +69,7 @@
     </div>
 </section>
 
-<section id="seccion_tabledemo" class="pt-10 lg:pt-10 md:pt-10 sm:pt-10">
+<!--section id="marketplace" class="pt-10 lg:pt-10 md:pt-10 sm:pt-10">
     <div class="px-4 max-w-screen-2xl">
         <div class="pt-24 lg:pt-24 md:pt-24 sm:pt-24">
             <p class="text-blue-kexbal-900 md:text-6xl text-4xl md:text-center text-center font-extrabold font-inter">
@@ -81,120 +85,150 @@
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="p-4">
-                                <button (click)="sort('usuario')" class="datatable-sorter"><span
-                                        class="flex items-center"> USUARIO <svg
+                                <button class="datatable-sorter"><span class="flex items-center"> USUARIO <svg
                                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
-                                            <path stroke="currentColor"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
                                         </svg></span></button>
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                <button (click)="sort('usd')" class="datatable-sorter"><span
-                                    class="flex items-center"> USD <svg
-                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
-                                        <path stroke="currentColor"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
-                                    </svg></span></button>
+                                <button class="datatable-sorter"><span class="flex items-center">
+                                        USD <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                        </svg></span></button>
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                <button (click)="sort('tasa')" class="datatable-sorter"><span
-                                    class="flex items-center"> TASA <svg
-                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
-                                        <path stroke="currentColor"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
-                                    </svg></span></button>
+                                <button class="datatable-sorter"><span class="flex items-center">
+                                        TASA <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                        </svg></span></button>
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                <button (click)="sort('banco')" class="datatable-sorter"><span
-                                    class="flex items-center"> BANCO <svg _ngcontent-ng-c1515712050=""
-                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="none" viewBox="0 0 24 24" class="w-4 h-4 ms-1">
-                                        <path stroke="currentColor"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
-                                    </svg></span></button>
+                                <button class="datatable-sorter"><span class="flex items-center"> BANCO <svg
+                                            _ngcontent-ng-c1515712050="" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24" class="w-4 h-4 ms-1">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m8 15 4 4 4-4m0-6-4-4-4 4"></path>
+                                        </svg></span></button>
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                
+
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"  *ngFor="let item of sortedData">
-                            <th scope="row" class="px-6 py-4 text-sm font-semibold text-gray-900 whitespace-nowrap ">
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                            *ngFor="let item of ofertas | paginate: { itemsPerPage: 8, currentPage: page }">
+                            <th scope="row" class="px-6 py-2 text-sm font-semibold text-gray-900 whitespace-nowrap ">
                                 {{item.id_seller.username}}
                             </th>
-                            <td class="px-6 py-4 text-sm font-semibold text-gray-900">
+                            <td class="px-6 py-2 text-sm font-semibold text-gray-900">
                                 {{item.available_offer | currency}}
                             </td>
-                            <td class="px-6 py-4 text-sm font-normal text-gray-500">
+                            <td class="px-6 py-2 text-sm font-normal text-gray-500">
 
                                 {{item.kexbal_exchange_rate | currency}}
                             </td>
-                            <td class="px-6 py-4 text-purple-800 text-xs font-medium font-inter">
+                            <td class="px-6 py-2 text-purple-800 text-xs font-medium font-inter">
                                 <div class="bg-primary-color-100 p-2 rounded-md bank-box"> {{item.bank}}</div>
                             </td>
-                            <td class="px-6 py-4">
-                                <button class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2"
-                                    routerLink="/auth/sign-in">Comprar</button>
+                            <td class="px-6 py-2">
+                                <a class="inline-flex rounded-md px-3 py-2 text-xs font-medium border border-r-2"
+                                    [routerLink]="'/auth/sign-in'">Comprar</a>
                             </td>
                         </tr>
-                  
+
                     </tbody>
                 </table>
+           
                 <nav class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 datatable-bottom"
                     aria-label="Table navigation">
                     <span
                         class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto datatable-info">Mostrar
-                        <span class="font-semibold text-gray-900 dark:text-white">1-10</span> de <span
-                            class="font-semibold text-gray-900 dark:text-white">1000</span></span>
-                    <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
-                        <li>
-                            <a
-                                class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
-                                  </svg>
-                                  </a>
-                        </li>
-                        <li>
-                            <a
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                        </li>
-                        <li>
-                            <a
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                        </li>
-                        <li>
-                            <a aria-current="page"
-                                class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                        </li>
-                        <li>
-                            <a
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                        </li>
-                        <li>
-                            <a 
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                        </li>
-                        <li>
-                            <a
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
-                                  </svg>
-                                  </a>
-                        </li>
-                    </ul>
+                        <span class="font-semibold text-gray-900 dark:text-white">{{ getStartIndex() + 1 }}-{{
+                            getEndIndex() }}</span> de <span class="font-semibold text-gray-900 dark:text-white">{{
+                            totalItems }}</span></span>
+
+                    <div class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
+                        <pagination-controls (pageChange)="page = $event" previousLabel="<" nextLabel=">"
+                            [responsive]="true"></pagination-controls>
+                    </div>
                 </nav>
             </div>
 
         </div>
     </div>
+</section-->
+
+<section class="bg-white-kexbal-100 pt-28 pb-28 ">
+    <div class="max-w-7xl mx-auto p-6">
+        <div class="text-left mb-5">
+            <p class="text-4xl font-extrabold font font-inter">Publicar Oferta</p>
+        </div>
+        <!-- Contenedor de dos columnas -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Columna 1: Formulario -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow pt-10 px-8 mb-8 sm:mb-0 h-full">
+            <form class="max-w-xl mx-auto font-inter" [formGroup]="form">
+                <div class="flex space-x-4">
+                    <div class="mb-5 w-full">
+                        <label for="ofertaUsa" class="block mb-2 text-sm font-medium font-inter">
+                            Oferta en USD
+                        </label>
+                        <input (change)="calcularResultado()" placeholder="$100" formControlName="ofertaUsa"
+                            type="text" mask="separator.2" thousandSeparator="," mask="separator.0"
+                            thousandSeparator="." decimalMarker="," prefix="$" id="ofertaUsa"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full" />
+                    </div>
+                    <div class="mb-5 w-full">
+                        <label for="tasaGt" class="block mb-2 text-sm font-medium font-inter">
+                            Tasa en GTQ
+                        </label>
+                        <input (change)="calcularResultado()" type="text" id="tasaGt" placeholder="Q0.00"
+                            mask="separator.2" thousandSeparator="," formControlName="tasaGt"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full" />
+                    </div>
+                </div>
+                <div class="pt-2 sm:rounded-lg">
+                    <button [disabled]="form.invalid"
+                        class="w-full rounded-md px-3 py-3 text-xs font-medium bg-primary-color-500 text-white-kexbal-100 font-inter"
+                        routerLink="/auth/sign-in">Publicar
+                        Oferta</button>
+                </div>
+            </form>
+          </div>
+      
+          <!-- Columna 2: Resumen de la oferta -->
+          <div class="bg-white-kexbal-100 px-8 sm:rounded-lg h-2/3">
+            <div class=" bg-white-kexbal-100 sm:rounded-lg">
+                <p class="text-center text-base font-normal text-gray-900 font-inter">Resumen de la Oferta</p>
+                <div class="flex justify-between py-2">
+                    <p class="text-left text-base font-normal text-gray-900 font-inter">Venderás</p>
+                    <span>{{monto1 | currency }} </span>
+                </div>
+                <div class="flex justify-between py-2">
+                    <p class="text-left text-base font-normal text-gray-900 font-inter">Tasa</p>
+                    <span>{{monto2 | currency:'GTQ':'symbol':'1.2-2' }}</span>
+                </div>
+                <div class="flex justify-between py-2 border-b-2">
+                    <p class="text-left text-base font-normal text-gray-900 font-inter">Servicio
+                        kexbal</p>
+                    <span class="">0.00</span>
+                </div>
+                <div class="flex justify-between py-4">
+                    <p class="text-lg font-extrabold font-inter">Recibirás</p>
+                    <span class="font-extrabold">{{resultado | currency:'GTQ':'symbol':'1.2-2'}}</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </section>
 
 <section id="seccion_3" class="bg-primary-color-600 text-center pt-16 pb-16">
@@ -211,7 +245,7 @@
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
                     <span class="img-iconq font-inter">
-                        ¿Cómo funciona Kexbal?</span>
+                        ¿Cómo funciona KEXBAL?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -244,9 +278,10 @@
             </h2>
             <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-2 text-base font-normal font-inter  w-full text-left">
-                    <p class="mb-2 text-white-kexbal-100 font-inter">Flowbite is first conceptualized and designed using
-                        the Figma software so everything you see in the library has a design equivalent in our Figma
-                        file.
+                    <p class="mb-2 text-white-kexbal-100 font-inter">Sí, KEXBAL emplea un sistema de custodia para
+                        garantizar la seguridad de los fondos durante las transacciones. Solo libera el dinero cuando se
+                        verifica que ambas partes han cumplido con sus obligaciones, brindando confianza y
+                        transparencia.
                     </p>
                 </div>
             </div>
@@ -265,8 +300,9 @@
             </h2>
             <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                 <div class="p-2  w-full text-left">
-                    <p class="mb-2 text-white-kexbal-100">The main difference is that the core components
-                        from.</p>
+                    <p class="mb-2 text-white-kexbal-100 font-inter">Una vez que ambas partes completen y verifiquen sus
+                        transferencias dentro de la plataforma, KEXBAL libera los fondos de forma inmediata, asegurando
+                        que la transacción sea rápida y eficiente.</p>
                 </div>
             </div>
             <h2 id="accordion-collapse-heading-4">
@@ -284,13 +320,47 @@
             </h2>
             <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
                 <div class="p-2  w-full text-left">
-                    <p class="mb-2 text-white-kexbal-100">The main difference is that the core components
-                        from.</p>
+                    <p class="mb-2 text-white-kexbal-100 font-inter">El "Servicio KEXBAL" se divide equitativamente
+                        entre comprador y vendedor: Para transacciones de hasta $5,000, se cobran Q0.04 por dólar a cada
+                        uno. Entre $5,000.01 y $25,000, se cobran Q0.03 por dólar a cada uno. Para montos superiores a
+                        $25,000, se cobran Q0.02 por dólar a cada uno.</p>
                 </div>
             </div>
+            <h2 id="accordion-collapse-heading-5">
+                <button type="button"
+                    class="flex items-center justify-between w-full pb-5 pt-5 font-medium bg-blue-kexbal-600 text-white-kexbal-100 font-inter border border-x-0"
+                    data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                    aria-controls="accordion-collapse-body-5">
+                    <span class="img-iconq">¿Puedo usar KEXBAL desde cualquier banco? </span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                <div class="p-2  w-full text-left">
+                    <p class="mb-2 text-white-kexbal-100 font-inter">Sí, puedes realizar transacciones desde cualquier banco.
+                        Para montos de hasta $2,500, es posible transaccionar entre cuentas de diferentes bancos. Sin embargo,
+                        para montos superiores a $2,500, las transacciones deben ser entre cuentas del mismo banco para asegurar
+                        tiempos de transferencia rápidos y evitar comisiones adicionales. Ejemplos:</p>
+                    <p class="mb-1 text-white-kexbal-100 font-inter">
+                        Monto hasta $2,500: Si tienes dólares en una cuenta del Banco Industrial y deseas venderlos a alguien
+                        que tiene una cuenta en el Banco G&T, puedes hacerlo sin problemas.
+                    </p>
+                    <p class="mb-2 text-white-kexbal-100 font-inter">
+                        Monto superior a $2,500: Si quieres vender $5,000 y tu cuenta está en el Banco Industrial, solo podrás
+                        completar la transacción con un comprador que también tenga su cuenta en el Banco Industrial.
+                    </p>
+                </div>
+            </div>
+            
         </div>
+
     </div>
 </section>
+
 
 <section id="seccion_5" class=" bg-primary-color-800 h-screen">
     <div

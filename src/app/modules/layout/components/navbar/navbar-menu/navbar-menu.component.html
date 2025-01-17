@@ -9,46 +9,39 @@
 </div-->
 
 <div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
-  <a [routerLink]="'home'"  
-  routerLinkActive="active"
-  [routerLinkActiveOptions]="{ exact: true }"
-  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+  <a (click)="scrollTo('seccion1')" 
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item seccion1 active">
     <span>Inicio</span>
   </a>
 </div>
 <div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
-  <a [routerLink]="'home'"  
-  routerLinkActive="active"
-  [routerLinkActiveOptions]="{ exact: true }"
-  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+  <a (click)="scrollTo('seccion2')"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item seccion2">
     <span>Como funciona</span>
   </a>
 </div>
 <div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
-  <a [routerLink]="'home#seccion_2'"
-  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+  <a  (click)="scrollTo('seccion3')"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item seccion3">
     <span>Preguntas</span>
   </a>
 </div>
 <div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
-  <a [routerLink]="'nosotros'"  
-  routerLinkActive="active"
-  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
-    <span>Nosotros</span>
-  </a>
-</div>
-<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
-  <a [routerLink]="'home#seccion_3'"  
-  routerLinkActive="active"
-  [routerLinkActiveOptions]="{ exact: true }"
-  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+  <a (click)="scrollTo('seccion5')"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item seccion5">
     <span>Contacto</span>
   </a>
 </div>
+
 <div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
-  <a [routerLink]="'marketplace'"  
-  routerLinkActive="active"
-  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item">
+  <a (click)="scrollTo('marketplace')"
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item marketplace">
     <span>Marketplace</span>
+  </a>
+</div>
+<div class="relative flex sm:inline-flex md:inline-flex lg:inline-flex lg:w-auto lg:order-1">
+  <a (click)="scrollTo('nosotros')" 
+  class="mr-6 inline-flex rounded-sm px-3 py-2 text-base font-medium font-inter lg:bg-transparent lg:text-primary-700 lg:p-0 menu-item nosotros">
+    <span>Nosotros</span>
   </a>
 </div>

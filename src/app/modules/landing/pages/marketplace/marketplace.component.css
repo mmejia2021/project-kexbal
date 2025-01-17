@@ -1,5 +1,5 @@
 .bank-box{
-    width: 90px;
+    width: 120px;
     height: auto;
     text-align: center;
 }
@@ -15,4 +15,40 @@
     margin-right: 22px;
     color: #6B7280;
     font-size: 0.875rem;
+}
+
+li.current {
+    margin: 0px;
+    padding: 0px;
+    border-top: 2px;
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #DEDBFF !important;
+    color: #382CA6 !important;
+    cursor: pointer;
+    font-family: 'Inter' !important;
+    font-size: 14px !important;
+}
+.ngx-pagination li {
+    border-color: #E5E7EB !important;
+    border-style: solid !important;
+    margin-right: 0px !important;
+}
+.ngx-pagination .pagination-previous a:before, .ngx-pagination .pagination-previous.disabled:before {
+    content: "\ab";
+    display: none !important;
+    margin-right: 0.5rem;
+}
+.ngx-pagination .pagination-next a:after, .ngx-pagination .pagination-next.disabled:after {
+    content: "\bb";
+    display: none !important;
+    margin-left: 0.5rem;
+}
+li.pagination-previous {
+    border-radius: 10px 0px 0px 10px !important;
+}
+li.pagination-next {
+    border-radius: 0px 10px 10px 0px !important;
 }

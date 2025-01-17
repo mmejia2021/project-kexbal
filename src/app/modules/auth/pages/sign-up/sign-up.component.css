@@ -5,4 +5,9 @@
   .is__invalid-error {
     color: #e11d48;
   }
+
+  .center-letter{
+   margin: auto;
+  }
+
   

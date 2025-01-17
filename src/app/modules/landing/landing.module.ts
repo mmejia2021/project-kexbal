@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe  } from '@angular/common';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { LandingRoutingModule } from './landing-routing.module';
-import { ParallaxStandaloneDirective } from '@yoozly/ngx-parallax';
-import { RouterModule, Routes  } from '@angular/router';
 
 
 
@@ -12,12 +10,11 @@ import { RouterModule, Routes  } from '@angular/router';
   imports: [
     CommonModule,
     LandingRoutingModule,
-    NgxMaskDirective,
-    ParallaxStandaloneDirective,
-    RouterModule
+    NgxMaskDirective
   ],
   providers: [
     provideNgxMask(), // Configuración global de la librería
+    CurrencyPipe
   ]
 })
 export class LandingModule {
