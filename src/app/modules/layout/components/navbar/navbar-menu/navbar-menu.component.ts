@@ -34,16 +34,16 @@ export class NavbarMenuComponent implements OnInit {
     });
     inicio[0].classList.add('active')
     if (section === 'nosotros') {
-      this.router.navigate(['/kexbal/nosotros']).then(() => {
+      this.router.navigate(['/nosotros']).then(() => {
         this.viewportScroller.scrollToAnchor(section);
       });
     } else if (section === 'marketplace') {
-      this.router.navigate(['/kexbal/marketplace']).then(() => {
+      this.router.navigate(['/marketplace']).then(() => {
         this.viewportScroller.scrollToAnchor(section);
       });
     }
     else {
-      this.router.navigate(['/kexbal/home']).then(() => {
+      this.router.navigate(['/home']).then(() => {
         this.viewportScroller.scrollToAnchor(section);
       });
 

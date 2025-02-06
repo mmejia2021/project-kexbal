@@ -4,11 +4,11 @@ import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
   {
-    path: 'kexbal',
+    path: '',
     component: LayoutComponent,
     loadChildren: () => import('../landing/landing.module').then((m) => m.LandingModule),
   },
-  { path: '', redirectTo: 'kexbal/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'error/404' },
 ];
 
