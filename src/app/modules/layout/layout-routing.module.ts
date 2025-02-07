@@ -4,11 +4,11 @@ import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'landing',
     component: LayoutComponent,
     loadChildren: () => import('../landing/landing.module').then((m) => m.LandingModule),
   },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'landing/home', pathMatch: 'full' },
   { path: '**', redirectTo: 'error/404' },
 ];
 

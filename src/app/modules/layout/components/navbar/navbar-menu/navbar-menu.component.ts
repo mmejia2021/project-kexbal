@@ -34,16 +34,16 @@ export class NavbarMenuComponent implements OnInit {
     });
     inicio[0].classList.add('active')
     if (section === 'nosotros') {
-      this.router.navigate(['/nosotros']).then(() => {
+      this.router.navigate(['landing/nosotros']).then(() => {
         this.viewportScroller.scrollToAnchor(section);
       });
     } else if (section === 'marketplace') {
-      this.router.navigate(['/marketplace']).then(() => {
+      this.router.navigate(['landing/marketplace']).then(() => {
         this.viewportScroller.scrollToAnchor(section);
       });
     }
     else {
-      this.router.navigate(['/home']).then(() => {
+      this.router.navigate(['landing/home']).then(() => {
         this.viewportScroller.scrollToAnchor(section);
       });
 

@@ -56,9 +56,8 @@ export class SignInComponent implements OnInit {
         this.errorMessage = '';
         let secretKey = 'Myk3xb@lk3y';
         let queryString = CryptoJS.AES.encrypt(this.form.value.email + "|" + this.form.value.password, secretKey).toString();
-       let url = 'https://linkdebashbaord.com/login?' + queryString
-       console.log('Encrypted Text:', url);
-      window.open(url, '_blank'); // '_blank' abre el enlace en una nueva pestaña
+       let url = 'https://kexbal-dashboard-d7565b64c330.herokuapp.com/login?q=' + queryString
+      window.open(url,"_self"); // '_blank' abre el enlace en una nueva pestaña
       },
       error: (err) => {
         console.error('usuario invalido:', err.message);
